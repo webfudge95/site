@@ -1,0 +1,161 @@
+body
+{
+    background: #fff;
+    max-width: 700px;
+    margin: 0 auto;
+    font-family: 'cantarell';
+}
+header
+{
+    padding-top: 40px;
+}
+nav
+{
+    max-width: 700px;
+    border-bottom: solid 1px #000;
+    padding: 8px 0;
+    margin: 0 auto;
+}
+nav a
+{
+    font-family: connection II;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 12px;
+}
+nav a.active
+{
+    background-color: #000;
+    color: #fff;
+}
+.title {
+    margin: 40px 0 40px 0;
+}
+.title a
+{
+    text-decoration: none;
+}
+.title h1
+{
+    text-align: center;
+    color: #444
+}
+.author
+{
+    text-align: center;
+    font-family: connection II;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.background
+{
+    background-color: #fff;
+    background-image: radial-gradient(#000 1px, #fff 1px);
+    background-size: 3px 3px;
+    display: flex;
+}
+.game
+{
+    border: solid 1px #000;
+    display: block;
+    background-color: #fff;
+    overflow: hidden;
+}
+.windowed
+{
+    margin: 10px auto;
+    max-width: 500px;
+    height: 330px;
+}
+.full
+{
+    border-top: none;
+    padding: 0;
+    width: 100%;
+    height: 350px;
+}
+.container {
+    padding: 5px 10px;
+    overflow-y: scroll;
+    scrollbar-color: #000 #fff;
+}
+.windowed .container
+{
+    height: 289px;
+}
+.full .container
+{
+    height: 309px;
+}
+.game h1, .game p
+{
+    font-family: connection II;
+}
+.titlebar
+{
+    height: 30px;
+    width: 100%;
+    border-bottom: solid 1px #000;
+    background-color: #fff;
+    background-image: linear-gradient(#000 1px, #fff 1px);
+    background-size: 4px 3px;
+    position: relative;
+}
+.titlebar::before {
+    content: '';
+    width: calc(100% - 6px);
+    height: 4px;
+    position: absolute;
+    height: calc(100% - 8px);
+    border-top: solid 4px #fff;
+    border-bottom: solid 4px #fff;
+    border-left: solid 3px #fff;
+    border-right: solid 3px #fff;
+}
+.titlebar .text
+{
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    max-width: 100px;
+    height: 25px;
+    top: 5px;
+}
+.titlebar p
+{
+    text-align: center;
+    font-family: connection II;
+    padding: 2px;
+    margin: 0;
+}
+.titlebar .square
+{
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    height: 22px;
+    background-color: #fff;
+    width: 24px;
+}
+.titlebar .square::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: solid 1px #000;
+    display: block;
+    margin: 3px;
+}
+.power
+{
+    border: none;
+    background-image: url('assets/power.png');
+    width: 25px;
+    height: 31px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.power:hover {
+    cursor: pointer;
+}

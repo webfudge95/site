@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="game.css">
+        <title>How not to create a website</title>
+    </head>
+    <body onload="game()">
+        <header>
+            <nav>
+                <a class="active" href="./index.html">Home</a>
+                <a href="./about.html">About Me</a>
+                <a href="./blog.html">Blog</a>
+            </nav>
+        </header>
+        <main>
+            <div class="background">
+                <div id="window" class="game windowed">
+                    <div class="titlebar">
+                        <div class="square" onclick="changeWindow()"></div>
+                        <div class="text"><p>Game</p></div>
+                    </div>
+                    <canvas id="game" width="700" height="300">
+                        <noscript>
+                            <h1 class="error">Javascript is not enabled :(</h1>
+                        </noscript>
+                    </canvas>
+                    <!--button onclick="drawScene()" class="power"></button-->
+                </div>
+            </div>
+        </main>
+        <footer>
+            <script type="text/javascript" src="assets/js/windowed.js"></script>
+            <script type="text/javascript" src="games/nac.js"></script>
+            <h1 class="author">Site by Daniel Barrass</h1>
+        </footer>
+    </body>
+</html>
