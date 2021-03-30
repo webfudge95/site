@@ -21,11 +21,14 @@ h1.error
 {
     background-repeat: no-repeat;
     background-size: auto 72px;
-    background-image: url("assets/cat.png");
+    background-image: url("../catblack.png");
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
     width: 112px;
     height: 72px;
     position: absolute;
     bottom: 0;
+    left: 40px;
 }
 #cat.wag
 {
