@@ -1,0 +1,62 @@
+#game
+{
+    background: #fff;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+h1.error
+{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 35%;
+    font-family: 'connection II';
+    color: #fff;
+}
+#cat
+{
+    background-repeat: no-repeat;
+    background-size: auto 72px;
+    background-image: url("assets/cat.png");
+    width: 112px;
+    height: 72px;
+    position: absolute;
+    bottom: 0;
+}
+#cat.wag
+{
+    animation: 0.5s wag step-end;
+    background-position: -672px 0;
+}
+#cat.sitting
+{
+    background-position: -672px 0;
+}
+#cat.climbing
+{
+    animation: 0.5s climb step-end;
+    background-position: -672px 0;
+}
+@keyframes climb
+{
+    0% {background-position: 0 0;}
+    15% {background-position: -112px 0;}
+    30% {background-position: -224px 0;}
+    45% {background-position: -336px 0;}
+    60% {background-position: -448px 0;}
+    75% {background-position: -560px 0;}
+    90% {background-position: -672px 0;}
+}
+@keyframes wag
+{
+    0% {background-position: -784px 0;}
+    20% {background-position: -896px 0;}
+    40% {background-position: -1008px 0;}
+    60% {background-position: -1120px 0;}
+    80% {background-position: -1232px 0;}
+    100% {background-position: -1344px 0;}
+}
