@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="assets/css/game.css">
         <title>How not to create a website</title>
     </head>
-    <body>
+    <body onkeydown="arrows(event)">
         <header>
             <nav>
                 <a class="active" href="./index.html">Home</a>
@@ -21,7 +21,7 @@
                         <div class="square" onclick="changeWindow()"></div>
                         <div class="text"><p>Game</p></div>
                     </div>
-                    <canvas id="game" width="700" height="300">
+                    <canvas id="game" width="512" height="342">
                         <noscript>
                             <h1 class="error">Javascript is not enabled :(</h1>
                         </noscript>
@@ -34,7 +34,7 @@
             <div id="cat"></div>
             <script type="text/javascript" src="assets/js/windowed.js"></script>
             <script type="text/javascript" src="assets/js/cat.js"></script>
-            <script type="text/javascript" src="games/square.js"></script>
+            <script type="text/javascript" src="games/snake.js"></script>
             <h1 class="author">Site by Daniel Barrass</h1>
         </footer>
     </body>

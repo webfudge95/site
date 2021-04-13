@@ -3,8 +3,8 @@
     background: #fff;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
-    width: 500px;
-    height: 300px;
+    width: 512px;
+    height: 342px;
     position: relative;
 }
 h1.error

@@ -64,8 +64,8 @@ nav a.active
 .windowed
 {
     margin: 10px auto;
-    max-width: 500px;
-    height: 330px;
+    max-width: 512px;
+    height: 372px;
 }
 .full
 {
