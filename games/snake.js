@@ -3,8 +3,20 @@ Snake Game
 By Daniel Barrass
 */
 
+const version = 0.1;
+let width = 512;
+let height = 342;
+
 var canvas = document.getElementById("game");
 ctx = canvas.getContext("2d");
+
+document.body.setAttribute('onkeydown', 'arrows(event)');
+
+// Version Info
+ctx.beginPath();
+ctx.font = "12px LCD Solid";
+ctx.fillText(`v ${version}`, width - 50, height - 20);
+ctx.fill();
 
 // Initial Variables
 let direction = "right";

@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Connection II;
+    src: url('../fonts/ConnectionII.otf');
+}
+
+@font-face {
+    font-family: LCD Solid;
+    src: url('../fonts/LcdSolid.ttf');
+}
+
 html, body {
     height: 100%;
 }
@@ -46,9 +56,22 @@ nav a.active
 .author
 {
     text-align: center;
-    font-family: connection II;
+    font-family: Connection II;
     font-size: 20px;
     font-weight: lighter;
+}
+footer img {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width: 32px;
+    margin: 0 auto;
+    display: block;
+}
+footer h3 {
+    text-align: center;
+    font-family: LCD Solid;
+    font-size: 11px;
+    margin-bottom: 4px;
 }
 .carts 
 {
@@ -61,10 +84,7 @@ nav a.active
     width: 32px;
     height: 32px;
     margin-bottom: 8px;
-<<<<<<< HEAD
     cursor: pointer;
-=======
->>>>>>> dc9905ccfaf7f18df421ecc9466eec7a57519fb5
 }
 main {
     position: relative;
