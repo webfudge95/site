@@ -61,7 +61,10 @@ nav a.active
     width: 32px;
     height: 32px;
     margin-bottom: 8px;
+<<<<<<< HEAD
     cursor: pointer;
+=======
+>>>>>>> dc9905ccfaf7f18df421ecc9466eec7a57519fb5
 }
 main {
     position: relative;
