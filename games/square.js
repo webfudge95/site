@@ -2,11 +2,19 @@ var canvas = document.getElementById("game");
 ctx = canvas.getContext("2d");
 ctx.imageSmoothingEnabled = false
 ctx.mozImageSmoothing = false
-canvas.width = 500;
-canvas.height = 300;
+canvas.width = 512;
+canvas.height = 342;
 canvas.style.backgroundColor = "#000"
 x = 680 //Math.floor((Math.random() * canvas.width) + 1);
 y = Math.floor((Math.random() * canvas.height) + 1);
+
+function not_complete() {
+    ctx.beginPath();
+    ctx.font = "20px Connection II";
+    ctx.fillStyle = "#fff";
+    ctx.textAlign = "center";
+    ctx.fillText("Game not complete.. yet!", canvas.width / 2, canvas.height - 30);
+}
 
 if ( y < 30)
 {
@@ -44,6 +52,7 @@ function drawCat()
     img = new Image();
     img.src = "assets/heart.png";
     
+    not_complete();
     ctx.drawImage(img, x, y - rheight, rwidth, rheight)
     if (reversew != true) {
         x += 1;

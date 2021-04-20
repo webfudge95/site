@@ -214,3 +214,5 @@ function game()
         console.log("test");
     }
 }
+
+game()

@@ -1,3 +1,6 @@
+html, body {
+    height: 100%;
+}
 body
 {
     background: #fff;
@@ -46,6 +49,21 @@ nav a.active
     font-family: connection II;
     font-size: 20px;
     font-weight: lighter;
+}
+.carts 
+{
+    position: absolute;
+    right: -40px;
+    width: 32px;
+}
+.carts img
+{
+    width: 32px;
+    height: 32px;
+    margin-bottom: 8px;
+}
+main {
+    position: relative;
 }
 .background
 {
